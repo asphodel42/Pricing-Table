@@ -66,20 +66,20 @@ body{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9fccfa", endColorstr="#0974f1", GradientType=1 );
 }
 
-.big-price > .table-content-header{
-    background: hsla(33, 100%, 53%, 1);
-    background: linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%);
-    background: -moz-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%);
-    background: -webkit-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%); 
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff930f", endColorstr="#FFBF30", GradientType=1 );
-}
-
 .med-price > .table-content-header{
     background: hsla(165, 89%, 31%, 1);
     background: linear-gradient(135deg, hsla(165, 89%, 31%, 1) 0%, hsla(165, 87%, 32%, 1) 59%, hsla(161, 99%, 45%, 1) 100%);
     background: -moz-linear-gradient(135deg, hsla(165, 89%, 31%, 1) 0%, hsla(165, 87%, 32%, 1) 59%, hsla(161, 99%, 45%, 1) 100%);
     background: -webkit-linear-gradient(135deg, hsla(165, 89%, 31%, 1) 0%, hsla(165, 87%, 32%, 1) 59%, hsla(161, 99%, 45%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#099773", endColorstr="#0B9874", GradientType=1 );
+}
+
+.big-price > .table-content-header{
+    background: hsla(33, 100%, 53%, 1);
+    background: linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%); 
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff930f", endColorstr="#FFBF30", GradientType=1 );
 }
 
 /* Edititng main content of table */
@@ -135,4 +135,65 @@ li{
 }
 .low-price  li::marker{
     color: lightskyblue;
+}
+
+
+/* Button styles */
+
+button.button-buy {
+    margin-bottom: 25px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    color: #fff;
+    transition: transform .3s linear;
+}
+
+.low-price button.button-buy{
+    background: hsla(210, 90%, 80%, 1);
+    background: linear-gradient(315deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 71%);
+    background: -moz-linear-gradient(315deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 71%);
+    background: -webkit-linear-gradient(315deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 71%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9fccfa", endColorstr="#0974f1", GradientType=1 );
+}
+
+.med-price button.button-buy{
+    background: hsla(165, 89%, 31%, 1);
+    background: linear-gradient(135deg, hsla(165, 89%, 31%, 1) 0%, hsla(165, 87%, 32%, 1) 59%, hsla(161, 99%, 45%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(165, 89%, 31%, 1) 0%, hsla(165, 87%, 32%, 1) 59%, hsla(161, 99%, 45%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(165, 89%, 31%, 1) 0%, hsla(165, 87%, 32%, 1) 59%, hsla(161, 99%, 45%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#099773", endColorstr="#0B9874", GradientType=1 );
+}
+
+.big-price button.button-buy{
+    background: hsla(33, 100%, 53%, 1);
+    background: linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%); 
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff930f", endColorstr="#FFBF30", GradientType=1 );
+}
+
+button.button-buy:hover,
+button.button-buy:focus {
+    outline: none;
+    box-shadow: 0 0.5em 0.5em -0.4em black; 
+    transform: translateY(-0.25em);
+} 
+
+.low-price button.button-buy:hover,
+.low-price button.button-buy:focus{
+    box-shadow: 0 0.5em 0.5em -0.4em #89BFF8;
+}
+.med-price button.button-buy:hover,
+.med-price button.button-buy:focus{
+    box-shadow: 0 0.5em 0.5em -0.4em #04CF91;
+}
+.big-price button.button-buy:hover,
+.big-price button.button-buy:focus{
+    box-shadow: 0 0.5em 0.5em -0.4em #FFD742;
+}
+
+button.button-buy:active {
+    transform: translateY(0.25em)
 }

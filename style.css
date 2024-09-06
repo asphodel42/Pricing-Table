@@ -21,11 +21,6 @@ body{
     flex-basis: 250px;
     flex-shrink: 1;   
     /* adding font */
-    
-    /* font-family: "Patrick Hand", cursive;
-    font-weight: 400;
-    font-style: normal; */
-
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;

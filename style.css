@@ -6,6 +6,7 @@
 
 body{
     overflow: hidden;
+    background-color: #f1f1f1;
 }
 
 .table-container{
@@ -13,12 +14,12 @@ body{
     justify-content: center;
     align-items: stretch;
     gap: 30px;
+    padding: 15px;
 }
 
 .table-container > *{
     flex-basis: 250px;
     flex-shrink: 1;   
-    padding: 20px;
     /* adding font */
     
     /* font-family: "Patrick Hand", cursive;
@@ -29,6 +30,10 @@ body{
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
 }
 
 
@@ -57,6 +62,7 @@ body{
 }
 
 /* Creating gradient in header of table items */
+
 .low-price > .table-content-header{
     background: hsla(210, 90%, 80%, 1);
     background: linear-gradient(315deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 71%);
@@ -81,3 +87,57 @@ body{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#099773", endColorstr="#0B9874", GradientType=1 );
 }
 
+/* Edititng main content of table */
+
+.table-content-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-text{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 3rem;
+}
+
+.dollar-sign{
+    font-weight: normal;
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+.permonth-sign{
+    font-weight: normal;
+    font-size: 1rem;
+    vertical-align: bottom;
+}
+
+.table-content-main hr{
+    width: 70px
+}
+
+.table-content-main > ul{
+    padding: 10px 10px 20px 20px;
+}
+
+li{
+    padding-left: 10px;
+}
+
+/* Styles for list markers */
+
+.table-content-main > ul > li::marker{
+    content: '♥';
+}
+
+.big-price  li::marker{
+    color: orange;
+}
+.med-price  li::marker{
+    color: seagreen;
+}
+.low-price  li::marker{
+    color: lightskyblue;
+}

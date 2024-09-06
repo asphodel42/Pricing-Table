@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.table-container >*{
+    flex-basis: 220px;
+    padding: 20px;
+    /* adding font */
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Creating style for table headers */
+.table-content-header{
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px 30px 0px 0px;
+    -webkit-border-radius: 30px 30px 0px 0px;
+    -moz-border-radius: 30px 30px 0px 0px;
+}
+
+.table-content-header > h1{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
+}
+
+.table-content-header > p{
+    font-size: 0.7rem;
+    text-align: center;
+    text-wrap: wrap;
+    padding-top: 10px;
+}
+
+/* Creating gradient in header of table items */
+.low-price > .table-content-header{
+    background: hsla(210, 90%, 80%, 1);
+    background: linear-gradient(315deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 71%);
+    background: -moz-linear-gradient(315deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 71%);
+    background: -webkit-linear-gradient(315deg, hsla(210, 90%, 80%, 1) 0%, hsla(212, 93%, 49%, 1) 71%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9fccfa", endColorstr="#0974f1", GradientType=1 );
+}
+
+.big-price > .table-content-header{
+    background: hsla(33, 100%, 53%, 1);
+    background: linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(41, 100%, 59%, 1) 78%, hsla(58, 100%, 68%, 1) 100%); 
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff930f", endColorstr="#FFBF30", GradientType=1 );
+}
+
+.med-price > .table-content-header{
+    background: hsla(165, 89%, 31%, 1);
+    background: linear-gradient(135deg, hsla(165, 89%, 31%, 1) 0%, hsla(165, 87%, 32%, 1) 59%, hsla(161, 99%, 45%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(165, 89%, 31%, 1) 0%, hsla(165, 87%, 32%, 1) 59%, hsla(161, 99%, 45%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(165, 89%, 31%, 1) 0%, hsla(165, 87%, 32%, 1) 59%, hsla(161, 99%, 45%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#099773", endColorstr="#0B9874", GradientType=1 );
+}
+

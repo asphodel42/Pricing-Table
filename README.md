@@ -8,7 +8,8 @@ For tablets and mobile devices with width of screen < 650 i used a media query, 
 The goal was in studying interests but it looks pretty good, let me know what you think.
 
 ## Was used:
-<a ref="https://www.w3schools.com/html/"><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML" width="40" height="40"/></a> <a ref="https://www.w3schools.com/Css/"><img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS" width="40" height="40"/></a>
+<p align="left"> <a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML" width="40" height="40"/> </a> <a href="https://www.w3schools.com/Css/" target="_blank" rel="noreferrer"> <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS" width="40" height="40"/> </a> </p>
+
 ## Demo
 
 https://github.com/user-attachments/assets/161bd4d8-01ef-4716-9141-bc3f15917db6
